@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Writer Demo</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codeplayer.css">
+
+    <!-- for manual or full control on jquery, download jquery and store on your own server and link script-->
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="logo">
+        CodePlay
+      </div>
+      <div class="buttonWrapper">
+        <div class="toggleButton active" id="html">html</div>
+        <div class="toggleButton" id="css">css</div>
+        <div class="toggleButton" id="js">js</div>
+        <div class="toggleButton active" id="output">output</div>
+      </div>
+    </div>
+    <div class="content">
+
+        <label for="">HTML &darr;</label>
+        <textarea name="name" id="htmlContainer" class="contentContainer selected"><p id="testing">hello</p></textarea>
+
+
+        <label for="">CSS &darr;</label>
+        <textarea name="name" id="cssContainer" class="contentContainer hidden">p { color: green;}</textarea>
+
+
+        <label for="">JS &darr;</label>
+        <textarea name="name" id="jsContainer" class="contentContainer hidden">document.getElementById("testing").innerHTML = "im working";</textarea>
+
+    </div>
+    <div class="outputWrapper">
+      <label for="" class="outputLabel">OUTPUT</label>
+      <iframe id="outputContainer" src="" width="" height=""></iframe>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
